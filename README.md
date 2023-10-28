@@ -1,2 +1,55 @@
 # PageRank
-PageRank calculation using pyspark and pig
+### Faculté des Sciences et des Techniques - Nantes Université  
+Gestion des données distribuées à large échelle  
+**Professeur**: MOLLI Pascal  
+**Étudiants**: Alaoui Mdaghri Ahmed, Hbitouch Mohammed
+
+
+[1. Exécutions pagerank - Pig vs PySpark](1-exécutions-pagerank---pig-vs-pyspark)  
+[2. Meilleur pagerank](#2-meilleur-pagerank)  
+
+
+
+
+# 1. Exécutions pagerank - Pig vs PySpark
+
+
+## PIG
+| Nombre de noeuds | Temps d'exécution  | Dataproc Job id
+| ------------- | -------------| ------------- |
+| 2 | 1 h 49 min | edd09c524da84755a324e48497456f72 |
+| 3 | 	1 h 17 min | 033d44f323734c3a944aa929fc53ba33 |
+| 4 | 	1 h 17 minc |4b84501b8d1243f2bf1e255811a21e00 |
+
+
+## PySpark
+| Nombre de noeuds | Temps d'exécution | Dataproc Job id
+| ------------- | ------------- | ------------- |
+| 2 | 1 h 20 min | eb579fcf2c284e0b811da35256512628 |
+| 3 | 58 min 53 s | 87b353ae70b5416e92652ac0797d0e7a |
+| 4 | 59 min 24 s | fd63cf2456ef440099e806996090d4aa |
+
+
+
+
+
+
+# 2. Meilleur pagerank
+Nous avons obtenu que l'entité avec le meilleur pagerank c'est l'uri <http://dbpedia.org/resource/Living_people>, avec un pagerank de **36,794.33**. On présente ci-après le top 10 des uri ayant le meilleur pagerank, issue de 3 itérations de l'algorithme pagerank.
+| Rank | Url  | Pagerank |
+| ---- | ------------- | ------------- |
+|4| **http://dbpedia.org/resource/Living_people** | **36794.33146754463**  |
+|2| http://dbpedia.org/resource/United_States | 13201.340151981207  |
+|3| http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census | 10371.162005541351  |
+|4| http://dbpedia.org/resource/List_of_sovereign_states  | 5195.34736186218  |
+|5| http://dbpedia.org/resource/United_Kingdom  | 4923.82130931521  |
+|6| http://dbpedia.org/resource/Year_of_birth_missing_%28living_people%29  | 4615.7939763369795  |
+|7| http://dbpedia.org/resource/France  | 4595.730518177778  |
+|8| http://dbpedia.org/resource/Germany  | 4111.195621667528  |
+|9| http://dbpedia.org/resource/Canada  | 3765.46156061246 |
+|10| http://dbpedia.org/resource/Animal  | 3692.395898434714  |  
+
+
+
+
+
