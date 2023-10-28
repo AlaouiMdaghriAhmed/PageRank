@@ -10,7 +10,7 @@ Gestion des données distribuées à large échelle
 
 
 # 1. Environnement
-
+* **Type de machine** : changement des types de machines vers --worker-machine-type n2-standard-2 et --worker-machine-type n2-standard-2 à cause de restriction de RAM
 * **Paramètres pagerank**: le nombre d'iterations a été fixé à **3**, et le facteur pagerank utilisé à {d = **0.85**}, pour les deux implémentations. 
 * **Nombre de noeuds**: 2, 3, 4 . Le nombre de noeuds a été déterminé en raison des restrictions du quota et la puissance minimale requise pour le fonctionnement des algorithmes.
 * **Données d'entrée**: le dataset [page_links_en.nt.bz2](http://downloads.dbpedia.org/3.5.1/en/page_links_en.nt.bz2), 
