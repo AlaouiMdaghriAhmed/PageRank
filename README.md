@@ -1,17 +1,23 @@
 # PageRank
-### Faculté des Sciences et des Techniques - Nantes Université  
+
 Gestion des données distribuées à large échelle  
 **Professeur**: MOLLI Pascal  
 **Étudiants**: Alaoui Mdaghri Ahmed, Hbitouch Mohammed
 
-
-[1. Exécutions pagerank - Pig vs PySpark](1-exécutions-pagerank---pig-vs-pyspark)  
-[2. Meilleur pagerank](#2-meilleur-pagerank)  
-
-
+[1. Environnement ](1-Environnement)  
+[2. Exécutions pagerank - Pig vs PySpark](1-exécutions-pagerank---pig-vs-pyspark)  
+[3. Meilleur pagerank](#2-meilleur-pagerank)  
 
 
-# 1. Exécutions pagerank - Pig vs PySpark
+# 1. Environnement
+
+* **Paramètres pagerank**: le nombre d'iterations a été fixé à **3**, et le facteur pagerank utilisé à {d = **0.85**}, pour les deux implémentations. 
+* **Nombre de noeuds**: 2, 3, 4 . Le nombre de noeuds a été déterminé en raison des restrictions du quota et la puissance minimale requise pour le fonctionnement des algorithmes.
+* **Données d'entrée**: le dataset [page_links_en.nt.bz2](http://downloads.dbpedia.org/3.5.1/en/page_links_en.nt.bz2), 
+préchargé dans le bucket public **gs://public_lddm_data//page_links_en.nt.bz2**
+
+
+# 2. Exécutions pagerank - Pig vs PySpark
 
 
 ## PIG
@@ -34,7 +40,7 @@ Gestion des données distribuées à large échelle
 
 
 
-# 2. Meilleur pagerank
+# 3. Meilleur pagerank
 Nous avons obtenu que l'entité avec le meilleur pagerank c'est l'uri <http://dbpedia.org/resource/Living_people>, avec un pagerank de **36,794.33**. On présente ci-après le top 10 des uri ayant le meilleur pagerank, issue de 3 itérations de l'algorithme pagerank.
 | Rank | Url  | Pagerank |
 | ---- | ------------- | ------------- |
