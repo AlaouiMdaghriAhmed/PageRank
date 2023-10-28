@@ -18,6 +18,8 @@ préchargé dans le bucket public **gs://public_lddm_data//page_links_en.nt.bz2*
 
 
 # 2. Exécutions pagerank - Pig vs PySpark
+<img align=center src= https://github.com/AlaouiMdaghriAhmed/PageRank/blob/main/Capture d'écran 2023-10-28 224925.png>
+
 
 
 ## PIG
